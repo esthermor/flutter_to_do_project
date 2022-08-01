@@ -49,6 +49,9 @@ class _State extends State<MyApp> {
                   style: TextStyle(fontWeight: FontWeight.bold),
                   controller: titleController,
                   decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(30)
+                    ),
                     labelText: 'Title',
                   ),
                 ),
@@ -59,6 +62,9 @@ class _State extends State<MyApp> {
                   style: TextStyle(fontWeight: FontWeight.bold),
                   controller: descriptionController,
                   decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30)
+                    ),
                     labelText: 'Description',
                   ),
                 ),
@@ -71,7 +77,7 @@ class _State extends State<MyApp> {
                       itemBuilder: (BuildContext context, int index) {
                         return Container(
                           color: Colors.purpleAccent,
-
+                          
                           // height: 60,
                           margin: EdgeInsets.all(5),
                           child: Align(
